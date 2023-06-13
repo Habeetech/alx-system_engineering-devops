@@ -1,2 +1,2 @@
 #!/bin/bash
-tree -a L1 PATH
+echo $((`echo $PATH | grep -0 ":/" | wc -l` + 1))
